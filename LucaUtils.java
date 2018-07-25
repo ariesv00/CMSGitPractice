@@ -31,7 +31,8 @@ public class LucaUtils {
 
 	public static String generateRandomString (int len) {
 		StringBuilder sb = new StringBuilder(len);
-		for (int i = 0; i < len; i++) 
+		// Adrián. He cambiado el bucle, poniendo 100 en vez de len
+		for (int i = 0; i < 100; i++) 
 			sb.append(AB.charAt(rnd.nextInt(AB.length())));
 		return sb.toString();
 	}
