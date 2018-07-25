@@ -23,16 +23,14 @@ public class LucaUtils {
 	public static String ROLE_SMO = "ROLE_SMO";
 	public static String ROLE_RRHH = "ROLE_RRHH";
 
-	//Carácteres nuevos introducidos
-	private static final String AB = "0123456789!"·$%&/()=?¿ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	private static final String AB = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	private static SecureRandom rnd = new SecureRandom();
 	
 	private static final String HEX_PATTERN = "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$";
 
 	public static String generateRandomString (int len) {
 		StringBuilder sb = new StringBuilder(len);
-		// Adrián. He cambiado el bucle, poniendo 100 en vez de len
-		for (int i = 0; i < 100; i++) 
+		for (int i = 0; i < len; i++) 
 			sb.append(AB.charAt(rnd.nextInt(AB.length())));
 		return sb.toString();
 	}
@@ -196,5 +194,9 @@ public class LucaUtils {
 			}
 		}
 		return result.toString();
+	}
+	public static void metodoPrueba(){
+
+	System.out.println("HolaMundo");
 	}
 }
