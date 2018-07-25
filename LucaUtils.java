@@ -23,7 +23,8 @@ public class LucaUtils {
 	public static String ROLE_SMO = "ROLE_SMO";
 	public static String ROLE_RRHH = "ROLE_RRHH";
 
-	private static final String AB = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	//Carácteres nuevos introducidos
+	private static final String AB = "0123456789!"·$%&/()=?¿ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	private static SecureRandom rnd = new SecureRandom();
 	
 	private static final String HEX_PATTERN = "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$";
